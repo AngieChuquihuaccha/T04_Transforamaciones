@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web Farmacia</title>
+    <link rel="shortcut icon" href="img/img.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/farmacia.png">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Acerca de</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <section class="textos-header">
+            <h1>Buena medicina para la buena salud</h1>
+            <h2>Haciéndote más saludable</h2>
+        </section>
+
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <div class="masProductos">
+            <div class="probando">
+                <h2 id="nosotros" class="titulo">Medicamentos</h2>
+                <img src="img/medicamento/aciclovir.jpg" alt="" class="img">
+                <img src="img/medicamento/bismutol.jpg" alt="" class="img">
+                <img src="img/medicamento/alcohol.png" alt="" class="img">
+                <img src="img/medicamento/ibuprofeno.jpg" alt="" class="img">
+                <img src="img/medicamento/panadol adulto.jpg" alt="" class="img">
+                <img src="img/medicamento/panadol infantil.jpg" alt="" class="img">
+                <img src="img/medicamento/prednisona.jpg" alt="" class="img">
+                <img src="img/medicamento/sal-de-andrews.jpg" alt="" class="img">
+            </div>
+        </div>
+
+        <div id="contenedorGaleria" class="contenedorGaleria">
+            <h2 id="inicio">Productos</h2>
+            <img id="imagenGrande" src="img/medicamento/med1.jpg" alt="">
+            <div id="contenedorMiniaturas" class="contenedorMiniaturas"> </div>
+        </div>
+
+        <script src="javascript.js"></script>
+
+        <section class=" contenedor sobre-nosotros">
+            <h2 id="nosotros" class="titulo">Nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img id="img" src="img/nosotros.jpg" alt="" class="imagen-about-us">
+                <div class="btn_wrapper">
+                    <button class="btn" id="btnLeft"><i class="fas fa-undoi"></i></button>
+                    <button class="btn" id="btnRight"><i class="fas fa-undoi"></i></button>
+                </div>
+                <script src="transform.js"></script>
+                <div class="contenido-textos">
+                    <h3><span>1</span>Misión</h3>
+                    <p>Ofrecer una asistencia sanitaria de calidad, para alcanzar y mantener la salud,
+                        ofreciendo servicios farmacéuticos y productos, de forma profesional, servicial y
+                        cercana.</p>
+
+                    <h3><span>2</span>Visión</h3>
+                    <p>Con respecto a nuestros <strong>usuarios: </strong>facilitar un rápido acceso a los
+                        productos que precisen, primando los
+                        servicios profesionales, para que saquen el máximo beneficio a sus medicamentos.</p>
+                    <p>Sobre nuestro <strong>equipo: </strong>responsabilizarse, respetar y cumplir el
+                        trabajo de forma individual, siendo
+                        conscientes de la importancia que tiene el trabajo de cada uno para conseguir un
+                        equipo eficaz y dinámico.</p>
+
+                    <h3><span>3</span>Valores</h3>
+                    <li><strong>Respeto</strong> hacia todos nuestros compañeros y clientes, es una actidud
+                        permanente. </li>
+                    <li><strong>Responsabilidad</strong> en todo lo que hacemos.</li>
+                    <li><strong>Puntualidad</strong> con todos nuestros compromisos de trabajo, lo que
+                        ofrecemos y prometemos.</li>
+                    <li><strong>Empatia</strong> con nuestros campañeros de trabajo y clientes.</li>
+                </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 id="servicios" class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img//telemedicina.png">
+                        <h3>Consulta de Salud Online Gratuita</h3>
+                        <p>Pregunta sobre cualquier inquietud médica tuya o de tu familia.
+                        </p>
+                    </div>
+
+                    <div class="servicio-ind">
+                        <img src="img/farmacia.png" alt="">
+                        <h3>Consulta de Stock</h3>
+                        <p>Consulta el stock del producto que buscas en tu farmacia más
+                            cercana.</p>
+                    </div>
+
+                    <div class="servicio-ind">
+                        <img src="img/primeros-auxilios.png" alt="">
+                        <h3>Centro de primeros auxilios</h3>
+                        <p>Brindamos los siguientes servicios:
+                        <li><strong>Curaciones</strong> de pequeñas y medianas heridas.</li>
+                        <li><strong>Inyectables</strong>  todo tipo de inyectables bajo indicación médica.</li>
+                        <li><strong>Control de signos vitales</strong> presión arterial, frecuencia cardiaca, temperatura y otros.</li></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientes contenedor">
+            <h2 id="clientes" class="titulo">Que dicen nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/cliente-female.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/cliente-male.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagoform">
+            <div id="pago" class="forma_de_pago">
+                <div class="col col">
+                    <p class="textotitulo ">
+                        <span>FORMAS<br class="vista1">
+                            <strong>DE PAGO</strong>
+                        </span>
+                    </p>
+                    <div class="col col">
+                        <figure class="figura">
+                            <img src="img/visa.jpg" alt="VISA">
+                            <img src="img/mastercard.jpg" alt="MasterCard">
+                            <img src="img/unnamed.jpg" alt="AMERICAN EXPRESS">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <section class="form-register">
+                <h4>Formulario Registro</h4>
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+                <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <input class="botons" type="submit" value="Registrar">
+                <p><a href="#">¿Ya tengo Cuenta?</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contacto" class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Equipo</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>8296312</p>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>8296312</p>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>Redes sociales</h4>
+                <a href="" class="btn" target="_blank"></a>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Team 04 | </h2>
+    </footer>
+</body>
+
+</html>

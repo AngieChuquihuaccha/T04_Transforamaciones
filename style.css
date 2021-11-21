@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #1f285e;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 750px;
+    background: #0f4d3f;
+    background: -webkit-linear-gradient(to right, hsla(216, 39%, 52%, 0.774), #76d6daec), url(img/farmacy.jpg);
+    background: linear-gradient(to right,  hsla(216, 39%, 52%, 0.774), #76d6daec), url(img/farmacy.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 20px;
+    background: linear-gradient(hsla(0, 0%, 91%, 0.541), #f2fff946);
+    
+}
+
+nav > a{
+    color:rgb(48, 47, 47);
+    font-weight: 4000;
+    text-decoration: none; 
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+nav .logo {
+    position: absolute; 
+    bottom: 684px; 
+    right: 1510px;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    stroke: none; 
+    fill: rgb(255, 255, 255);
+}
+
+/* galeria */
+
+.contenedorGaleria{
+    width: 35%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #1b68a3a1;
+    color: ghostwhite;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+}
+
+.contenedorMiniaturas img{
+    width: 33%;
+    height: 160px;
+    transition: .3s;
+}
+
+.contenedorMiniaturas img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.masProductos {
+  width:100%;
+  height: auto;
+  border-radius: .5rem;
+  vertical-align: auto;
+}
+
+.masProductos .probando .img{
+    width:350px;
+    height:350px;
+    object-fit: cover;
+    border-radius: .7rem;
+    vertical-align: auto;
+    border-style: none;
+}   
+
+.masProductos .bienestar .img{
+    height:12.2rem;
+    object-fit: cover;
+    border-radius: .7rem;
+    vertical-align: auto;
+    border-style: none;
+}
+
+/* Sobre nosotros */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 550px;
+    height: 450px;
+    position: relative;
+    top: 85px; 
+    left: 0px;
+    transition: all 0.9s ease;
+    border: 0.0625em solid rgb(75, 125, 172);
+    border-radius: 3.75em;
+}
+
+.btn{
+    background-color: #031629;
+    color: #205fd3;
+    margin: 3rem 3rem;
+}
+
+.btn:hover{
+    color: #20bdbd;
+    background-color: #1f285e;
+}
+
+.btn:focus{
+    box-shadow: none
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+    margin: 15px;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #101bb6a1;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Clientes */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #20bdbd;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Nuestro equipo */
+
+.about-services{
+    background: #a8a5a57c;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 20%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.servicio-ind li {
+    font-weight: 200;
+}
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #205fd3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+
+/* formulario */
+.pagoform {
+    position: relative;
+}
+
+.form-register {
+    width: 400px;
+    background: #a0acb3;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(14, 11, 11);
+    position: relative;
+    display: inline-block;
+    top: auto; 
+    left: 400px;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #031629;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #2d52a0c4;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #424fc7;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+/*.medi {
+    width: 200px;
+    cursor: pointer;
+}*/
+.forma_de_pago {
+    top: 10px;
+    display: inline-block;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(14, 13, 13);
+    position: relative;
+    top: 0px; 
+    left: 400px;
+}
+
+.textotitulo {
+    margin: 20px 0;
+    text-align:left;
+    font-size: 30px;
+}
+
+.figura {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    position: sticky;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 80%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 40px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* Sobre nosostros */
+
+    .imagen-about-us{
+        margin-bottom: 50px;
+        width: 70%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+    /* Clientes */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+}
